@@ -1,0 +1,183 @@
+@font-face {
+    font-family: Radiance;
+    src: url(fonts/radiance.ttf);
+}
+
+@font-face {
+    font-family: Radiance-Bold;
+    src: url(fonts/radiance-bold.ttf);
+}
+
+@font-face {
+    font-family: Radiance-Semibold;
+    src: url(fonts/radiance-semibold.ttf);
+}
+
+html,
+body {
+    font-family: Radiance;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    color: #808080;
+    text-shadow: 1px 1px #000000;
+}
+
+.Container {
+    width: 100%;
+}
+
+.Inner {
+    width: 1050px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Keyart {
+    background-image: url('images/keyart.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 676px;
+    background-color: #090911;
+}
+
+#Keyart img {
+    margin-top: 30px;
+    height: 64px;
+    width: 64px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Radiance;
+    font-weight: normal;
+    color: #ed3b1c;
+}
+
+h1 {
+    font-size: 72px;
+    margin: 40px 0 40px 0;
+    letter-spacing: 10px;
+}
+
+h4 {
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+h5 {
+    font-size: 20px;
+    color: #aaaaaa;
+    margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+    color: #CC867A;
+    text-decoration: none;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+#General {
+    background-image: url(images/list_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #0d0e10;
+    border-top: 1px solid #27272a;
+    border-bottom: 1px solid #27272a;
+}
+
+#Items {
+    background-image: url(images/featured_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #151618;
+}
+
+#Items .Inner,
+#Heroes .Inner,
+#General .Inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ItemChange,
+.HeroChange,
+.GeneralChange {
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+}
+
+.ItemImage,
+.HeroImage {
+    width: 56px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.HeroImage {
+    width: 64px !important;
+}
+
+.ItemChange li,
+.HeroChange li,
+.GeneralChange li {
+    padding-bottom: 10px;
+}
+
+#Heroes {
+    background-image: url(images/list_top_bg.jpg), url(images/list_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat, repeat-y;
+    background-color: #0d0e10;
+}
+
+
+/* wyk_hover_box_start */
+
+.ChangeDetails {
+    display: inline;
+    position: relative;
+}
+
+.ChangeDetails:hover:after {
+    position: absolute;
+    z-index: 100;
+    width: 550px;
+    background-color: #131313;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-left: -20px;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #707070;
+    content: attr(title);
+    top: 100%;
+}
+
+.ChangeDetails:hover:before {
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+
+/* wyk_hover_box_end wyk_thx_fam wimhaen */
+
+#Footer {
+    background-image: url(images/footer.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
